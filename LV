@@ -1,0 +1,51 @@
+#!/usr/bin/bash
+
+printf "Enter Name with and Version of Linux : "
+
+read linux_name
+
+kodachilinux=`echo $linux_name | egrep 'kodachi|Kodachi' `
+alpinelinux=`echo $linux_name | egrep 'alpine|Alpine'`
+antixlinux=`echo $linux_name | egrep 'antix|Antix|antiX'`
+cyborglinux=`echo $linux_name | egrep 'cyborg|Cyborg|cyborg-hawk|Cyborg-hawk|Cyborg-Hawk'`
+litelinux=`echo $linux_name | egrep 'lite|Lite|linux_lite|Linux_Lite'`
+slaxlinux=`echo $linux_name | egrep 'slax|Slax|SLAX'` #https://www.slax.org/
+grmllinux=`echo $linux_name | egrep 'grml|Grml|GRML'` #https://grml.org/
+
+minimalRockylinux=`echo $linux_name | egrep 'Rocky|rocky|ROCKY|Minimal|minimal'`
+Rockylinux=`echo $linux_name | egrep 'Rocky|rocky'`
+
+ubuntulinux=`echo $linux_name | egrep 'Ubuntu|ubuntu'`
+manjarolinux=`echo $linux_name | egrep 'manjaro|manjaro'`
+deepinlinux=`echo $linux_name | egrep 'deepin|Deepin'`
+bodhilinux=`echo $linux_name | egrep 'Bodhi|bodhi'`
+openSUSElinux=`echo $linux_name | egrep 'opensuse|Opensuse|openSuse|OPENsuse|openSUSE|OpenSuse'`
+Discreetelinux=`echo $linux_name | egrep 'Discreete|discreete'`
+lubuntulinux=`echo $linux_name | egrep 'Lubuntu|lubuntu'`
+lithiumlinux=`echo $linux_name | egrep 'bunsenlabs|Bunsenlabs|lithium|Lithium'`
+Peppermintlinux=`echo $linux_name | egrep 'Peppermint|peppermint'`
+
+
+printf "Enter SHA256sum : "
+
+read linux_sha
+
+
+if [ "$kodachilinux" == "kodachi" ] || [ "$kodachilinux" == "Kodachi" ];then
+       	if [ "$linux_sha" == 0924920d68c5bdb5edb28bde2730d3831db2da3f5b813a5ad903f10df32fc1cd ];then
+       		echo "=> Kodachi Linux : kodachi-8.17-64.iso"
+	fi
+fi
+
+if [ "$alpinelinux" == "alpine" ] || [ "$alpinelinux" == "Alpine" ];then
+	if [ "$linux_sha" == 730aceadaeab93d8bd18ace1575dcbdc5130b211c7e4b50aea7369e5f374a8a9 ];then
+       		echo "=> Alpine Linux : alpine-xen-3.13.5-x86_64.iso"
+
+	fi	
+fi
+
+if [ "$antixlinux" == "antix" ] || [ "$antixlinux" == "Antix" ] || [ "$antixlinux" == "AntiX" ];then
+	if [ "$linux_sha" == 8335d67b52f06673740663aeca108f8ce7990e63ba22750e9454ccc65a0d4ee5 ];then
+		echo "=> antiX Linux : antiX-21_x64-full.iso"
+	fi	
+fi
