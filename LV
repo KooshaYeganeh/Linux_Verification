@@ -7,7 +7,7 @@ read linux_name
 kodachilinux=`echo $linux_name | egrep 'kodachi|Kodachi' `
 alpinelinux=`echo $linux_name | egrep 'alpine|Alpine'`
 antixlinux=`echo $linux_name | egrep 'antix|Antix|antiX'`
-cyborglinux=`echo $linux_name | egrep 'cyborg|Cyborg|cyborg-hawk|Cyborg-hawk|Cyborg-Hawk'`
+cyborglinux=`echo $linux_name | egrep 'cyborg|Cyborg|cyborg-hawk|Cyborg-hawk|Cyborg-Hawk|cyborghawk|CyborgHawk'`
 litelinux=`echo $linux_name | egrep 'lite|Lite|linux_lite|Linux_Lite'`
 slaxlinux=`echo $linux_name | egrep 'slax|Slax|SLAX'` #https://www.slax.org/
 grmllinux=`echo $linux_name | egrep 'grml|Grml|GRML'` #https://grml.org/
@@ -49,3 +49,20 @@ if [ "$antixlinux" == "antix" ] || [ "$antixlinux" == "Antix" ] || [ "$antixlinu
 		echo "=> antiX Linux : antiX-21_x64-full.iso"
 	fi	
 fi
+
+
+if [ "$cyborglinux" == "cyborg" ] || [ "$cyborglinux" == "Cyborg" ] ||
+	[ "$cyborglinux" == "CyborgHawk" ] || [ "$cyborglinux" == "cyborghawk"] || [ "$cyborglinux" == "cyborg-hawk" ] || [ "Cyborg-Hawk" ];then
+	if [ "$linux_sha" == 8335d67b52f06673740663aeca108f8ce7990e63ba22750e9454ccc65a0d4ee5 ];then
+		echo "=> Cyborg-Hwak : cyborg-hawk-linux-v-1.1_2.iso"
+	fi	
+fi
+
+#lite|Lite|linux_lite|Linux_Lite'
+
+if [ "$litelinux" == "Linux_Lite" ] || [ "$litrelinux" == "linux_lite" ] || [ "$litelinux" == "Lite" ] || [ "$litelinux" == "lite" ];then
+	if [ "$linux_sha" == abd13a1aafc5824b68ea3b1e007e85ce39b2e3904f62f4de78f98d7cb5cd4104 ];then
+		echo "=> Linux Lite : linux-lite-5.2-64bit.iso"
+	fi	
+fi
+
