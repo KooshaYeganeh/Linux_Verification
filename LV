@@ -58,11 +58,22 @@ if [ "$cyborglinux" == "cyborg" ] || [ "$cyborglinux" == "Cyborg" ] ||
 	fi	
 fi
 
-#lite|Lite|linux_lite|Linux_Lite'
 
 if [ "$litelinux" == "Linux_Lite" ] || [ "$litrelinux" == "linux_lite" ] || [ "$litelinux" == "Lite" ] || [ "$litelinux" == "lite" ];then
 	if [ "$linux_sha" == abd13a1aafc5824b68ea3b1e007e85ce39b2e3904f62f4de78f98d7cb5cd4104 ];then
 		echo "=> Linux Lite : linux-lite-5.2-64bit.iso"
-	fi	
+	fi	
+fi
+
+if [ "$litelinux" == "SLAX" ] || [ "$litrelinux" == "Slax" ] || [ "$litelinux" == "slax" ];then
+	if [ "$linux_sha" == c3b7fe14f2d5128e6e1a40911956c992e1765364bd2ad74e36a4331150d9bb70 ];then
+		echo "=> Slax Linux : slax-64bit-11.4.0.iso"
+	fi	
+fi
+
+if [ "$litelinux" == "grml" ] || [ "$litrelinux" == "Grml" ] || [ "$litelinux" == "GRML" ];then
+	if [ "$linux_sha" == 7cec5cb3816edd55164d8d1cdfc315ecdda1ea26e5daa52fc8462f8d5bdd888d ];then
+		echo "=> grml Linux : gml64-full_2021.07.iso"
+	fi	
 fi
 
