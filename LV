@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 
-printf "Enter Name with and Version of Linux : "
+#printf "Enter Name with and Version of Linux : "
 
-read linux_name
+linux_name=$1
 
 kodachilinux=`echo $linux_name | egrep 'kodachi|Kodachi' `
 alpinelinux=`echo $linux_name | egrep 'alpine|Alpine'`
@@ -26,9 +26,9 @@ lithiumlinux=`echo $linux_name | egrep 'bunsenlabs|Bunsenlabs|lithium|Lithium'`
 Peppermintlinux=`echo $linux_name | egrep 'Peppermint|peppermint'`
 
 
-printf "Enter SHA256sum : "
+#printf "Enter SHA256sum or MD5: "
 
-read linux_sha
+linux_sha=$2
 
 
 if [ "$kodachilinux" == "kodachi" ] || [ "$kodachilinux" == "Kodachi" ];then
@@ -51,8 +51,7 @@ if [ "$antixlinux" == "antix" ] || [ "$antixlinux" == "Antix" ] || [ "$antixlinu
 fi
 
 
-if [ "$cyborglinux" == "cyborg" ] || [ "$cyborglinux" == "Cyborg" ] ||
-	[ "$cyborglinux" == "CyborgHawk" ] || [ "$cyborglinux" == "cyborghawk"] || [ "$cyborglinux" == "cyborg-hawk" ] || [ "Cyborg-Hawk" ];then
+if [ "$cyborglinux" == "cyborg" ] || [ "$cyborglinux" == "Cyborg" ] || [ "$cyborglinux" == "CyborgHawk" ] || [ "$cyborglinux" == "cyborghawk" ] || [ "$cyborglinux" == "cyborg-hawk" ] || [ "$cyborglinux" == "Cyborg-Hawk" ];then
 	if [ "$linux_sha" == 8335d67b52f06673740663aeca108f8ce7990e63ba22750e9454ccc65a0d4ee5 ];then
 		echo "=> Cyborg-Hwak : cyborg-hawk-linux-v-1.1_2.iso"
 	fi	
@@ -65,13 +64,13 @@ if [ "$litelinux" == "Linux_Lite" ] || [ "$litrelinux" == "linux_lite" ] || [ "$
 	fi	
 fi
 
-if [ "$litelinux" == "SLAX" ] || [ "$litrelinux" == "Slax" ] || [ "$litelinux" == "slax" ];then
-	if [ "$linux_sha" == c3b7fe14f2d5128e6e1a40911956c992e1765364bd2ad74e36a4331150d9bb70 ];then
+if [ "$slaxlinux" == "SLAX" ] || [ "$slaxlinux" == "Slax" ] || [ "$slaxlinux" == "slax" ];then
+	if [ "$linux_sha" == c3b7fe14f2d5128e6e1a40911956c992e1765364bd2ad74e36a4331150d9bb70 ] || [ "$linuxsha" == 32147e214fc32e39ea73f3a5438cedc ];then
 		echo "=> Slax Linux : slax-64bit-11.4.0.iso"
 	fi	
 fi
 
-if [ "$litelinux" == "grml" ] || [ "$litrelinux" == "Grml" ] || [ "$litelinux" == "GRML" ];then
+if [ "$grmllinux" == "grml" ] || [ "$grmllinux" == "Grml" ] || [ "$grmllinux" == "GRML" ];then
 	if [ "$linux_sha" == 7cec5cb3816edd55164d8d1cdfc315ecdda1ea26e5daa52fc8462f8d5bdd888d ];then
 		echo "=> grml Linux : gml64-full_2021.07.iso"
 	fi	
