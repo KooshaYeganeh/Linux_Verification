@@ -25,7 +25,7 @@ For Example
 `sudo mv LV /usr/bin/`
 
 
-## Renmve
+## Remove
 
 `sudo rm /usr/bin/LV`
 
