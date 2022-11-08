@@ -25,9 +25,10 @@ For Example
 `sudo mv LV /usr/bin/`
 
 
-## renove
+## Renmve
 
 `sudo rm /usr/bin/LV`
 
 
+## Donnate
 **Help Me to Create Better and Bigger Database :)**
