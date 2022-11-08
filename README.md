@@ -30,5 +30,5 @@ For Example
 `sudo rm /usr/bin/LV`
 
 
-## Donnate
+## Donate
 **Help Me to Create Better and Bigger Database :)**
