@@ -11,4 +11,23 @@ For Example
 
 `LV 75acfa25daf0117c37d9ceb72545fb89`
 
-**Help Me to Create Better and Bigger Database:)**
+
+## Install
+
+`cd /tmp`
+
+`wget https://github.com/KooshaYeganeh/Linux_Verification/archive/refs/heads/main.zip`
+
+`unzip main.zip`
+
+`cd Linux_Verification-main`
+
+`sudo mv LV /usr/bin/`
+
+
+## renove
+
+`sudo rm /usr/bin/LV`
+
+
+**Help Me to Create Better and Bigger Database :)**
