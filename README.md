@@ -11,7 +11,7 @@ For Example
 
 `LV 75acfa25daf0117c37d9ceb72545fb89`
 
-Note:If the entered hash is correct, the version and type of Linux will be displayed for you, otherwise the software will not give you any answer.
+**Note:If the entered hash is correct, the version and type of Linux will be displayed for you, otherwise the software will not give you any answer.**
 
 ## Install
 
