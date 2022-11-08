@@ -5,6 +5,6 @@ Check the Security of the Downloaded Linux iso File
 
 ## How to Use
 
-__~ LV (ha256sum or md5 of Linux)__
+**~ LV (ha256sum or md5 of Linux)**
 
 **Help Me to Create Better and Bigger Database:)**

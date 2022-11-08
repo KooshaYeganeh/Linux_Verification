@@ -152,7 +152,7 @@ fi
 
 
 
-
+#Cyborg-Hawk
 
 if [ "$linux_sha" == 8335d67b52f06673740663aeca108f8ce7990e63ba22750e9454ccc65a0d4ee5 ];then
 	echo "=> Cyborg-Hwak : cyborg-hawk-linux-v-1.1_2.iso"
@@ -179,7 +179,54 @@ if [ "$linux_sha" == f8d3ab0faeaecb5d26628ae1aa21c9a13e0a242c381aa08157db8624d57
 	echo "=> Ubuntu Linux : ubuntu-21.10-desktop-amd64.iso"
 fi	
 
+
+# Manjaro
+
 if [ "$linux_sha" == c9f6461608420e3ea936d9ba4628783aeece51bea3abcbfd04e4d35cf16dbee9 ] || [ "$linuxsha" == e506b66c974c5396cd21877cb95035ef ];then
 	echo "=> Manjaro Linux : manjaro-kde-21.2.4-220301-linux515.iso"
 fi	
+
+if [ "$linuxsha" == d9146437e83ce85f8987cdcd724017dfca9f073c ];then
+	echo "=> Manjaro Linux : manjaro-kde-21.3.7-220816-linux515.iso"
+fi
+
+if [ "$linuxsha" == ad0ddb5ba3b2ad677fa06bf8b1b2aec628d167ed ];then
+	echo "=> Manjaro Linux : manjaro-kde-21.3.7-minimal-220816-linux515.iso"
+fi
+
+if [ "$linuxsha" == 63b76319e4ca91d626e2bd30d34e841e134baec9  ];then
+	echo "=> Manjaro Linux : manjaro-xfce-21.3.7-220816-linux515.iso"
+fi
+
+
+if [ "$linuxsha" == d4f88e74400dcd21f62dea00faa9fe9c2bdfd5d0 ];then
+	echo "=> Manjaro Linux : manjaro-xfce-21.3.7-minimal-220816-linux515.iso"
+fi
+
+
+if [ "$linuxsha" == 394ab5a25a1eda9235f55f515265c7d8a5cf5e06 ];then
+	echo "=> Manjaro Linux : manjaro-gnome-21.3.7-220816-linux515.iso"
+fi
+
+
+if [ "$linuxsha" == ce838a633baef89d3111befea369c9bd8e90ab8a ];then
+	echo "=> Manjaro Linux : manjaro-gnome-21.3.7-minimal-220816-linux515.iso"
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
