@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+: ' 
+Jadi, Thank You For Everything '
 
 linux_sha=$1
 
@@ -166,7 +168,7 @@ fi
 if [ "$linux_sha" == 8bfee7756772b8f4613b783fa7be3996be9a2bebd39364d407f4c17ad24bdef4 ] || [ "$linux_sha" == 61d31b869cbe63803c1d18c306fb772b ];then
 	echo "=> Linux Lite : linux-lite-6.2-64bit.iso"
 fi
-if [ "$linux_sha" == c3b7fe14f2d5128e6e1a40911956c992e1765364bd2ad74e36a4331150d9bb70 ] || [ "$linuxsha" == 32147e214fc32e39ea73f3a5438cedc ];then
+if [ "$linux_sha" == c3b7fe14f2d5128e6e1a40911956c992e1765364bd2ad74e36a4331150d9bb70 ] || [ "$linux_sha" == 32147e214fc32e39ea73f3a5438cedc ];then
 	echo "=> Slax Linux : slax-64bit-11.4.0.iso"
 fi	
 
@@ -175,43 +177,132 @@ if [ "$linux_sha" == 7cec5cb3816edd55164d8d1cdfc315ecdda1ea26e5daa52fc8462f8d5bd
 fi	
 
 
-if [ "$linux_sha" == f8d3ab0faeaecb5d26628ae1aa21c9a13e0a242c381aa08157db8624d574b830 ] || [ "$linuxsha" == d1fe2dc15a2b1de029f4c0dccb4106ae ];then
+if [ "$linux_sha" == f8d3ab0faeaecb5d26628ae1aa21c9a13e0a242c381aa08157db8624d574b830 ] || [ "$linux_sha" == d1fe2dc15a2b1de029f4c0dccb4106ae ];then
 	echo "=> Ubuntu Linux : ubuntu-21.10-desktop-amd64.iso"
 fi	
 
 
 # Manjaro
 
-if [ "$linux_sha" == c9f6461608420e3ea936d9ba4628783aeece51bea3abcbfd04e4d35cf16dbee9 ] || [ "$linuxsha" == e506b66c974c5396cd21877cb95035ef ];then
+if [ "$linux_sha" == c9f6461608420e3ea936d9ba4628783aeece51bea3abcbfd04e4d35cf16dbee9 ] || [ "$linux_sha" == e506b66c974c5396cd21877cb95035ef ];then
 	echo "=> Manjaro Linux : manjaro-kde-21.2.4-220301-linux515.iso"
 fi	
 
-if [ "$linuxsha" == d9146437e83ce85f8987cdcd724017dfca9f073c ];then
+if [ "$linux_sha" == d9146437e83ce85f8987cdcd724017dfca9f073c ];then
 	echo "=> Manjaro Linux : manjaro-kde-21.3.7-220816-linux515.iso"
 fi
 
-if [ "$linuxsha" == ad0ddb5ba3b2ad677fa06bf8b1b2aec628d167ed ];then
+if [ "$linux_sha" == ad0ddb5ba3b2ad677fa06bf8b1b2aec628d167ed ];then
 	echo "=> Manjaro Linux : manjaro-kde-21.3.7-minimal-220816-linux515.iso"
 fi
 
-if [ "$linuxsha" == 63b76319e4ca91d626e2bd30d34e841e134baec9  ];then
+if [ "$linux_sha" == 63b76319e4ca91d626e2bd30d34e841e134baec9  ];then
 	echo "=> Manjaro Linux : manjaro-xfce-21.3.7-220816-linux515.iso"
 fi
 
 
-if [ "$linuxsha" == d4f88e74400dcd21f62dea00faa9fe9c2bdfd5d0 ];then
+if [ "$linux_sha" == d4f88e74400dcd21f62dea00faa9fe9c2bdfd5d0 ];then
 	echo "=> Manjaro Linux : manjaro-xfce-21.3.7-minimal-220816-linux515.iso"
 fi
 
 
-if [ "$linuxsha" == 394ab5a25a1eda9235f55f515265c7d8a5cf5e06 ];then
+if [ "$linux_sha" == 394ab5a25a1eda9235f55f515265c7d8a5cf5e06 ];then
 	echo "=> Manjaro Linux : manjaro-gnome-21.3.7-220816-linux515.iso"
 fi
 
 
-if [ "$linuxsha" == ce838a633baef89d3111befea369c9bd8e90ab8a ];then
+if [ "$linux_sha" == ce838a633baef89d3111befea369c9bd8e90ab8a ];then
 	echo "=> Manjaro Linux : manjaro-gnome-21.3.7-minimal-220816-linux515.iso"
 fi
+
+if [ "$linux_sha" == 80169891cb10c679cdc31dc035dab9aae3e874395adc5229f0fe5cfcc111cc8c ];then
+	echo "=> Fedora Linux : Fedora 36 x86_64 (iso) CHECKSUM "
+fi
+
+if [ "$linux_sha" == 80169891cb10c679cdc31dc035dab9aae3e874395adc5229f0fe5cfcc111cc8c ];then
+	echo "=> Fedora Linux : Fedora 36 x86_64 (iso) CHECKSUM "
+fi
+
+if [ "$linux_sha" == 84b85cadce497b880c12882c1fd6eb019ec8f0d58e45024dbbbdbdedc58ea2d3 ];then
+	echo "=> Fedora Linux : Fedora 37 x86_64 (iso) CHECKSUM Beta! "
+fi
+
+if [ "$linux_sha" == 1d48e0af63d07ff4e582a1819348e714c694e7fd33207f48879c2bc806960786 ];then
+	echo "=> Rocky Linux : Rocky-8.6-x86_64-dvd1.iso "
+fi
+
+if [ "$linux_sha" == a9ece0e810275e881abfd66bb0e59ac05d567a5ec0bc2f108b9a3e90bef5bf94 ];then
+	echo "=> Rocky Linux : Rocky-8.6-x86_64-minimal.iso "
+fi
+
+
+if [ "$linux_sha" == 55dbf904b35969be9f6d96f042b7470d1a3cb5c953bba47ab8f79740560d8a8d ];then
+	echo "=> Rocky Linux : Rocky-9.0-x86_64-dvd.iso "
+fi
+
+if [ "$linux_sha" == 6fe05fb0992d0ed2e131da669e308bb10e8f5672ad5c0a1ec331ca3006d24493 ];then
+	echo "=> Rocky Linux : Rocky-x86_64-dvd.iso "
+fi
+
+
+if [ "$linux_sha" == 6fe05fb0992d0ed2e131da669e308bb10e8f5672ad5c0a1ec331ca3006d24493 ];then
+	echo "=> Rocky Linux : Rocky-9.0-20220808.0-x86_64-dvd.iso "
+fi
+
+if [ "$linux_sha" == dbe7ee3000baa22ebfc7d66611597081c6b3e792a8c0c86a5a9d58e14650d874 ];then
+	echo "=> Rocky Linux : Rocky-9.0-x86_64-minimal.iso "
+fi
+
+if [ "$linux_sha" == b16bc85f4fd14facf3174cd0cf8434ee048d81e5470292f3e1cfff47af2463b7 ];then
+	echo "=> Rocky Linux : Rocky-x86_64-minimal.iso  "
+fi
+
+if [ "$linux_sha" == b16bc85f4fd14facf3174cd0cf8434ee048d81e5470292f3e1cfff47af2463b7 ];then
+	echo "=> Rocky Linux : Rocky-9.0-20220805.0-x86_64-minimal.iso "
+fi
+
+# Puppy
+
+if [ "$linux_sha" == 6a45e7a305b7d3172ebd9eab5ca460e4 ];then
+	echo "=> Puppy Linux : FossaPup64 9.5 "
+fi
+
+if [ "$linux_sha" == e31ddba0e6006021c157cb5a5b65ad5f ];then
+	echo "=> Puppy Linux : BionicPup64 8.0 "
+fi
+
+if [ "$linux_sha" == c27fe4eebd5101627a8787e91b067f28390f41fdb66a55ffee2777b72558368a ] || [ "$linux_sha" == 4502bb9693bd72fb5dcfb86a2ce8255d ];then
+	echo "=> Puppy Linux : XenialPup64 7.5 "
+fi
+
+
+# Bodhy
+
+if [ "$linux_sha" == ca00a927d0426c8309b296569a238582 ];then
+	echo "=> Budhy Linux : bodhi-6.0.0-64.iso"
+fi
+
+if [ "$linux_sha" == e2c92307e20ee8aeaba8e39c049fb993b32a3b2879d297a9c8b70efa50aae3ae ];then
+	echo "=> Bodhy Linux : bodhi-6.0.0-64.iso "
+fi
+
+
+
+# Mint
+if [ "$linux_sha" == f524114e4a10fb04ec428af5e8faf7998b18271ea72fbb4b63efe0338957c0f3 ];then
+	echo "=> Linux Mint: linuxmint-21-cinnamon-64bit.iso "
+fi
+
+if [ "$linux_sha" == 02a80ca98f82838e14bb02753bd73ee0da996c9cda3f027ae1c0ffb4612c8133 ];then
+	echo "=> Linux Mint : linuxmint-21-mate-64bit.iso"
+fi
+
+if [ "$linux_sha" == 3ad001dc15cb661c6652ce1d20ecdc85a939fa0b4b9325af5d0c65379cc3b17e ];then
+	echo "=>Linux Mint : linuxmint-21-xfce-64bit.iso"
+fi
+
+
+
 
 
 
