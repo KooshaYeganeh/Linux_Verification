@@ -1,78 +1,185 @@
 #!/usr/bin/bash
 
-#printf "Enter Name with and Version of Linux : "
 
-linux_name=$1
-
-kodachilinux=`echo $linux_name | egrep 'kodachi|Kodachi' `
-alpinelinux=`echo $linux_name | egrep 'alpine|Alpine'`
-antixlinux=`echo $linux_name | egrep 'antix|Antix|antiX'`
-cyborglinux=`echo $linux_name | egrep 'cyborg|Cyborg|cyborg-hawk|Cyborg-hawk|Cyborg-Hawk|cyborghawk|CyborgHawk'`
-litelinux=`echo $linux_name | egrep 'lite|Lite|linux_lite|Linux_Lite'`
-slaxlinux=`echo $linux_name | egrep 'slax|Slax|SLAX'` #https://www.slax.org/
-grmllinux=`echo $linux_name | egrep 'grml|Grml|GRML'` #https://grml.org/
-
-minimalRockylinux=`echo $linux_name | egrep 'Rocky|rocky|ROCKY|Minimal|minimal'`
-Rockylinux=`echo $linux_name | egrep 'Rocky|rocky'`
-
-ubuntulinux=`echo $linux_name | egrep 'Ubuntu|ubuntu'`
-manjarolinux=`echo $linux_name | egrep 'manjaro|manjaro'`
-deepinlinux=`echo $linux_name | egrep 'deepin|Deepin'`
-bodhilinux=`echo $linux_name | egrep 'Bodhi|bodhi'`
-openSUSElinux=`echo $linux_name | egrep 'opensuse|Opensuse|openSuse|OPENsuse|openSUSE|OpenSuse'`
-Discreetelinux=`echo $linux_name | egrep 'Discreete|discreete'`
-lubuntulinux=`echo $linux_name | egrep 'Lubuntu|lubuntu'`
-lithiumlinux=`echo $linux_name | egrep 'bunsenlabs|Bunsenlabs|lithium|Lithium'`
-Peppermintlinux=`echo $linux_name | egrep 'Peppermint|peppermint'`
+linux_sha=$1
 
 
-#printf "Enter SHA256sum or MD5: "
-
-linux_sha=$2
-
-
-if [ "$kodachilinux" == "kodachi" ] || [ "$kodachilinux" == "Kodachi" ];then
-       	if [ "$linux_sha" == 0924920d68c5bdb5edb28bde2730d3831db2da3f5b813a5ad903f10df32fc1cd ];then
-       		echo "=> Kodachi Linux : kodachi-8.17-64.iso"
-	fi
+if [ "$linux_sha" == 0924920d68c5bdb5edb28bde2730d3831db2da3f5b813a5ad903f10df32fc1cd ];then
+	echo "=> Kodachi Linux : kodachi-8.17-64.iso"
 fi
 
-if [ "$alpinelinux" == "alpine" ] || [ "$alpinelinux" == "Alpine" ];then
-	if [ "$linux_sha" == 730aceadaeab93d8bd18ace1575dcbdc5130b211c7e4b50aea7369e5f374a8a9 ];then
-       		echo "=> Alpine Linux : alpine-xen-3.13.5-x86_64.iso"
+if [ "$linux_sha" == 730aceadaeab93d8bd18ace1575dcbdc5130b211c7e4b50aea7369e5f374a8a9 ];then
+	echo "=> Alpine Linux : alpine-xen-3.13.5-x86_64.iso"
 
-	fi	
+fi	
+
+if [ "$linux_sha" == 8335d67b52f06673740663aeca108f8ce7990e63ba22750e9454ccc65a0d4ee5 ];then
+	echo "=> antiX Linux : antiX-21_x64-full.iso"
+fi	
+
+# antiX Linux
+
+##  md5sums antiX-22-sysVinit
+
+if [ "$linux_sha" == 34ec14e563459cec588c999cc9ec478b ];then
+	echo "=> antiX Linux : antiX-22_386-full.iso"
 fi
 
-if [ "$antixlinux" == "antix" ] || [ "$antixlinux" == "Antix" ] || [ "$antixlinux" == "AntiX" ];then
-	if [ "$linux_sha" == 8335d67b52f06673740663aeca108f8ce7990e63ba22750e9454ccc65a0d4ee5 ];then
-		echo "=> antiX Linux : antiX-21_x64-full.iso"
-	fi	
+if [ "$linux_sha" == 281e8fdfa5c5d970f64bc00f18c26124 ];then
+	echo "=> antiX Linux : antiX-22_x64-full.iso"
+fi
+
+if [ "$linux_sha" == b43b03ee610e77e99991bc9c56784855 ];then
+	echo "=> antiX Linux : antiX-22_386-base.iso"
+fi
+
+if [ "$linux_sha" == bdc19b660ce781cd13d3a87aab88ba89 ];then
+	echo "=> antiX Linux : antiX-22_x64-base.iso"
+fi
+
+if [ "$linux_sha" == 6a9421bc0c98d7e5075f04984dffaa41 ];then
+	echo "=> antiX Linux : antiX-22_386-core.iso"
+fi
+
+if [ "$linux_sha" == 99dd0c51d70ed9a96feca2e39f1e2bda ];then
+	echo "=> antiX Linux : antiX-22_x64-core.iso"
+fi
+
+if [ "$linux_sha" == bc68a9036c7fbe0fb96f1e85431eb953 ];then
+	echo "=> antiX Linux : antiX-22-net_386-net.iso"
+fi
+
+if [ "$linux_sha" == a6a4a83ea7d7afd26f0073bbcb9251f1 ];then
+	echo "=> antiX Linux : antiX-22-net_x64-net.iso"
+fi
+
+## sha256sum antiX-22-sysVinit
+
+
+if [ "$linux_sha" == 4763d85487423b226676238983e6f853dab46c20b3b62668a739e612e50c8ffd ];then
+	echo "=> antiX Linux : antiX-22_386-full.iso"
+fi
+
+if [ "$linux_sha" == 579b29b0d9047d1a2ca914a0c4b09ef93c04035f620fdaeb4356f5b5fef1a60a ];then
+	echo "=> antiX Linux : antiX-22_x64-full.iso"
+fi
+
+if [ "$linux_sha" == b1f3ce0ca6c37be88b6b18987ed6e4ed60610fddf7764f0e0915a448982184f3 ];then
+	echo "=> antiX Linux : antiX-22_386-base.iso"
+fi
+if [ "$linux_sha" == 1d69537d3b93a97ceb8eaef9909eb15d6129412b26df23f69dc668dfa7f7c993 ];then
+	echo "=> antiX Linux : antiX-22_x64-base.iso"
+fi
+if [ "$linux_sha" == e5d2d985eb8c843de722711d45834d15249dfc707e19402f83335b784bc9e23a ];then
+	echo "=> antiX Linux : antiX-22-runit_386-core.iso"
+fi
+if [ "$linux_sha" == 4c35f2046df7e26df1b098e04455ef9c85b42cee84d4ce37f03dead362e86595 ];then
+	echo "=> antiX Linux : antiX-22-runit_x64-core.iso"
+fi
+
+if [ "$linux_sha" == f4b0daa8b063fa1fb4afd376d16d48224817ca45b353d44b37f127eac55e4c09 ];then
+	echo "=> antiX Linux : antiX-22-runit-net_386-net.iso"
+fi
+
+if [ "$linux_sha" == ee48f5f34173bc1c6c69125725704488d1b95cddf4d4bacbfcfb5ffbbacb658c ];then
+	echo "=> antiX Linux : antiX-22-runit-net_x64-net.iso"
 fi
 
 
-if [ "$cyborglinux" == "cyborg" ] || [ "$cyborglinux" == "Cyborg" ] || [ "$cyborglinux" == "CyborgHawk" ] || [ "$cyborglinux" == "cyborghawk" ] || [ "$cyborglinux" == "cyborg-hawk" ] || [ "$cyborglinux" == "Cyborg-Hawk" ];then
-	if [ "$linux_sha" == 8335d67b52f06673740663aeca108f8ce7990e63ba22750e9454ccc65a0d4ee5 ];then
-		echo "=> Cyborg-Hwak : cyborg-hawk-linux-v-1.1_2.iso"
-	fi	
+
+
+##antiX-22-runit
+
+
+if [ "$linux_sha" == 8a1841b392de9f4a7f9d13ac23816e27 ];then
+	echo "=> antiX Linux : antiX-22-runit_386-full.iso"
+fi
+
+if [ "$linux_sha" == 8b53c6223a46a52b71c72c31ad4c84b8 ];then
+	echo "=> antiX Linux : antiX-22-runit_x64-full.iso"
+fi
+
+if [ "$linux_sha" == e46aee8ccbcd58bea488f87d55b8bd41 ];then
+	echo "=> antiX Linux : antiX-22-runit_386-base.iso"
+fi
+if [ "$linux_sha" == f76e0d72b267552ee3506316a98b3ba8 ];then
+	echo "=> antiX Linux : antiX-22-runit_x64-base.iso"
+fi
+if [ "$linux_sha" == 1b0641b8f02cadcb690e928b21e2694f ];then
+	echo "=> antiX Linux : antiX-22-runit_386-core.iso"
+fi
+if [ "$linux_sha" == 19d4c436cb663dd209ba620ac462d938 ];then
+	echo "=> antiX Linux : antiX-22-runit_x64-core.iso"
+fi
+
+if [ "$linux_sha" == 9711c33f80750c7c186f371b5f41ad4e ];then
+	echo "=> antiX Linux : antiX-22-runit-net_386-net.iso"
+fi
+
+if [ "$linux_sha" == 9fb22855c189fdd46a6390f15df95345 ];then
+	echo "=> antiX Linux : antiX-22-runit-net_x64-net.iso"
 fi
 
 
-if [ "$litelinux" == "Linux_Lite" ] || [ "$litrelinux" == "linux_lite" ] || [ "$litelinux" == "Lite" ] || [ "$litelinux" == "lite" ];then
-	if [ "$linux_sha" == abd13a1aafc5824b68ea3b1e007e85ce39b2e3904f62f4de78f98d7cb5cd4104 ];then
-		echo "=> Linux Lite : linux-lite-5.2-64bit.iso"
-	fi	
+if [ "$linux_sha" == ece573a225befdfe6029670cb76eb48e004f710e457cf391e6200cce5ec4bdad ];then
+	echo "=> antiX Linux : antiX-22-runit_386-full.iso"
 fi
 
-if [ "$slaxlinux" == "SLAX" ] || [ "$slaxlinux" == "Slax" ] || [ "$slaxlinux" == "slax" ];then
-	if [ "$linux_sha" == c3b7fe14f2d5128e6e1a40911956c992e1765364bd2ad74e36a4331150d9bb70 ] || [ "$linuxsha" == 32147e214fc32e39ea73f3a5438cedc ];then
-		echo "=> Slax Linux : slax-64bit-11.4.0.iso"
-	fi	
+if [ "$linux_sha" == 92ca06081dc51cdbe7091bfdd3efedac64780a584017db868120302e831148e9 ];then
+	echo "=> antiX Linux : antiX-22-runit_x64-full.iso"
 fi
 
-if [ "$grmllinux" == "grml" ] || [ "$grmllinux" == "Grml" ] || [ "$grmllinux" == "GRML" ];then
-	if [ "$linux_sha" == 7cec5cb3816edd55164d8d1cdfc315ecdda1ea26e5daa52fc8462f8d5bdd888d ];then
-		echo "=> grml Linux : gml64-full_2021.07.iso"
-	fi	
+if [ "$linux_sha" == 9914de05f1c51b839c620df358cf6ce4cbb410a4b196a38c380a759505cd3251 ];then
+	echo "=> antiX Linux : antiX-22-runit_386-base.iso"
 fi
+if [ "$linux_sha" == 5fd948b5b20f76f30afbe5876c85992f60b180879a2a7e1286d60906a6d4b314 ];then
+	echo "=> antiX Linux : antiX-22-runit_x64-base.iso"
+fi
+if [ "$linux_sha" == 1f904d93f15151ec4d81b689cd852cebae018c53715dff917f0d196457fec5d4 ];then
+	echo "=> antiX Linux : antiX-22-runit_386-core.iso"
+fi
+if [ "$linux_sha" == 4b686746ddf0f11dfa3e92a0e0b6175eb7c7321dcf427c42aa92fa2c8f45b5e3 ];then
+	echo "=> antiX Linux : antiX-22-runit_x64-core.iso"
+fi
+
+if [ "$linux_sha" == 1a80c25ad5f709a114baaace108bab072880e071a60a01bd4fae9667c950fa0e ];then
+	echo "=> antiX Linux : antiX-22-runit-net_386-net.iso"
+fi
+
+if [ "$linux_sha" == 7551bacc5ac686268620fd00721adb054a84646c2cce4aa1c00049933402e7f1 ];then
+	echo "=> antiX Linux : antiX-22-runit-net_x64-net.iso"
+fi
+
+
+
+
+
+if [ "$linux_sha" == 8335d67b52f06673740663aeca108f8ce7990e63ba22750e9454ccc65a0d4ee5 ];then
+	echo "=> Cyborg-Hwak : cyborg-hawk-linux-v-1.1_2.iso"
+fi	
+
+
+if [ "$linux_sha" == abd13a1aafc5824b68ea3b1e007e85ce39b2e3904f62f4de78f98d7cb5cd4104 ];then
+	echo "=> Linux Lite : linux-lite-5.2-64bit.iso"
+fi	
+
+if [ "$linux_sha" == 8bfee7756772b8f4613b783fa7be3996be9a2bebd39364d407f4c17ad24bdef4 ] || [ "$linux_sha" == 61d31b869cbe63803c1d18c306fb772b ];then
+	echo "=> Linux Lite : linux-lite-6.2-64bit.iso"
+fi
+if [ "$linux_sha" == c3b7fe14f2d5128e6e1a40911956c992e1765364bd2ad74e36a4331150d9bb70 ] || [ "$linuxsha" == 32147e214fc32e39ea73f3a5438cedc ];then
+	echo "=> Slax Linux : slax-64bit-11.4.0.iso"
+fi	
+
+if [ "$linux_sha" == 7cec5cb3816edd55164d8d1cdfc315ecdda1ea26e5daa52fc8462f8d5bdd888d ];then
+	echo "=> grml Linux : gml64-full_2021.07.iso"
+fi	
+
+
+if [ "$linux_sha" == f8d3ab0faeaecb5d26628ae1aa21c9a13e0a242c381aa08157db8624d574b830 ] || [ "$linuxsha" == d1fe2dc15a2b1de029f4c0dccb4106ae ];then
+	echo "=> Ubuntu Linux : ubuntu-21.10-desktop-amd64.iso"
+fi	
+
+if [ "$linux_sha" == c9f6461608420e3ea936d9ba4628783aeece51bea3abcbfd04e4d35cf16dbee9 ] || [ "$linuxsha" == e506b66c974c5396cd21877cb95035ef ];then
+	echo "=> Manjaro Linux : manjaro-kde-21.2.4-220301-linux515.iso"
+fi	
 
