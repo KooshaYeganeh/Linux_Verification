@@ -303,21 +303,174 @@ fi
 
 
 
+# Kali
+
+
+if [ "$linux_sha" == ae977f455924f0268fac437d66e643827089b6f8dc5d76324d6296eb11d997fd ];then
+	echo "=> Kali Linux : kali-linux-2022.3-installer-amd64.iso"
+fi
+
+if [ "$linux_sha" == dc1e3b20cdbaca95030d46c94ab454fe4d8f0ae94668db6bea807997f07ebea3 ];then
+	echo "=> Kali Linux : kali-linux-2022.3-installer-i386.iso"
+fi
+
+
+if [ "$linux_sha" == 49766bd1cb69d991f91c946ba21968fd2adb031a866ffd80f6c9d4e9f8150c6c ];then
+	echo "=> Kali Linux : Kali NetHunter Lite ARM64(Full)"
+fi
+
+if [ "$linux_sha" == 4ae561d02da8bb7cf48533f2c92c3a48bb3846f7493fe060f1ffbec81d83f2d8 ];then
+	echo "=> Kali Linux : Kali NEtHunter Lite ARM64(NANO)"
+fi
+
+if [ "$linux_sha" == 325cfe07aaa29c8e67955e8c435b7e28e0524f36878c70097d0940aae476fc8b ];then
+	echo "=> Kali Linux : NetHunter Lite ARMhf(Full)"
+fi
+
+if [ "$linux_sha" == adfcbfc910262f1bf6b5f0ec2e4dbc22a8aa27a119eee6dd1f95d6ceccd68b1c ];then
+	echo "=> Kali Linux : NetHunter Lite ARMhf(Nano)"
+fi
+
+
+if [ "$linux_sha" == 42bbc061aeadad1623e0b55073e41695649a703664618b2f60809eeb13f847d0 ];then
+	echo "=> Kali Linux : Xiaomi Pocophone F1 (Eleven)"
+fi
+
+
+if [ "$linux_sha" == 015b4e4c1d750f7fb01d17411476d55d46b034a33f093c43c93e7a6041a74b71 ];then
+	echo "=> Kali Linux : Xiaomi Mi 9T MIUI 11(Ten)"
+fi
+
+
+if [ "$linux_sha" == 4a53228c81f6f2976666cb19cf5844d541d073c7c5026ddfcc3d13f90ce708cc ];then
+	echo "=> Kali Linux : Xiaomi Mi A3 ( LineageOS 18.1)"
+fi
+
+if [ "$linux_sha" == 98238cef46b771924b79fd8b2032575e ] || [ "$linux_sha" == e6853e10ba160f9ea669c5afd3da8adb5ef6ddca43fe22ccd20cd63412bb3ed0 ];then
+	echo "=> Nitrux Linux : Nitrux 2.5.0 "
+fi
+
+# Ubuntu
+
+if [ "$linux_sha" == c396e956a9f52c418397867d1ea5c0cf1a99a49dcf648b086d2fb762330cc88d ];then
+	echo "=> Ubuntu Linux : ubuntu-22.04.1-desktop-amd64.iso "
+fi
+
+
+if [ "$linux_sha" == 10f19c5b2b8d6db711582e0e27f5116296c34fe4b313ba45f9b201a5007056cb ];then
+	echo "=> Ubuntu Linux : ubuntu-22.04.1-live-server-amd64.iso "
+fi
 
 
 
 
+# Scientific
+
+if [ "$linux_sha" == e689be73294f547c8e42a06f24689961fa5f1d4e66cad764745b0db1251cd524 ];then
+	echo "=> Scientific Linux : Scientific-7.9-Everything-DVD-x86_64.iso"
+fi
+
+
+if [ "$linux_sha" == 7ac643e164c4a0da0b9f33411c68368cf908e0c34254904044957a3ca7793934 ];then
+	echo "=> Scientific Linux : Scientific-7.9-Install-Dual-Layer-DVD-x86_64.iso"
+fi
 
 
 
+if [ "$linux_sha" == 3705a428ddb02cdbe2280d900253dfe2f48053923d2b482b082dad25b7887bc0];then
+	echo "=> Scientific Linux : SL-79-x86_64-2020-10-17-LiveCD.iso"
+fi
+
+
+ if [ "$linux_sha" == 2f0ce5a5b2c376d520c02c2b1b0fa1855a87c27a1c2a0b2443f06d21e04b58fb ];then
+	echo "=> Scientific Linux :  SL-79-x86_64-2020-10-17-LiveDVDextra.iso"
+fi
+
+
+if [ "$linux_sha" == 2a3126891e13bc0752e2eb2600be4232722001d5b3471c512e54e0be081f8a3e ];then
+	echo "=> Scientific Linux : SL-79-x86_64-2020-10-17-LiveDVDgnome.iso"
+fi
+
+if [ "$linux_sha" == a642e639664bd50dfafd000c9bc84052fb394bb6e118be816c3079e4341bd29a ];then
+	echo "=> Scientific Linux : SL-79-x86_64-2020-10-17-LiveDVDkde.iso"
+fi
+
+if [ "$linux_sha" == d655e0affbcce9ff2f972bd45042ce27227f578c349f472fe92e7a96ae0529da ];then
+	echo "=> Scientific Linux : SL-7.9-x86_64-netinst.iso"
+fi
+
+if [ "$linux_sha" == 7ac643e164c4a0da0b9f33411c68368cf908e0c34254904044957a3ca7793934 ];then
+	echo "=> Scientific Linux : SL-7-DVD-x86_64.iso"
+fi
 
 
 
+# BunsenLabs
+
+
+if [ "$linux_sha" == a17d0364d55352487f4d08d5dc1ad7f789931e911cb4cb2c82cb5255c1ed1d23 ];then
+	echo "=> BunsenLabs Linux : lithium-3-amd64.hybrid.iso"
+fi
+
+if [ "$linux_sha" == 24a2bfa238e41806fb1f7440640d81fabfef6ed7016169281e94b8e9212d8a91 ];then
+	echo "=> BunsenLabs Linux : lithium-3-cd-i386.hybrid.iso"
+fi
+
+
+# Zorin
+
+if [ "$linux_sha" == a1919803e69d4a7c86cb319873cfa04e725cde2c8f66cfd551528b784c495822 ];then
+	echo "=> Zorin OS Linux : Zorin OS 16.2 Core 64-bit"
+fi
+
+
+if [ "$linux_sha" == 660c370736a8a1cad055b93598e0486384a1f7a131a8ce196de24b9fa71417f3 ];then
+	echo "=> Zorin OS Linux : Zorin OS 16.2 Lite 64-bit"
+fi
+
+
+if [ "$linux_sha" == ddcf4cede427ae722cb3c3bce115908ee19f94e703c09370c324b9919e7f23ea ];then
+	echo "=> Zorin OS Linux : Zorin OS 16.2 Pro 64-bit"
+fi
+
+
+if [ "$linux_sha" == 3a9df704c98e0b0f5547b30b03003033b7d8a5a2920865a4d5ed8dc1d0f495b7 ];then
+	echo "=> Zorin OS Linux : Zorin OS 16.2 Pro Lite 64-bit:"
+fi
+
+
+if [ "$linux_sha" == baafe855662dfcd90d6f0cab44a57a667a34cc81ef2d3098d47461cae99b3cc4 ];then
+	echo "=> Zorin OS Linux : Zorin OS 16.2 Education 64-bit"
+fi
+
+
+if [ "$linux_sha" == 6079a9293d99d94b1216c07dce0fea12c3302a84cccec5e429d22d29c76f79f8 ];then
+	echo "=> Zorin OS Linux : Zorin OS 16.2 Education Lite 64-bit"
+fi
+
+
+if [ "$linux_sha" == 95e4159ebb5b532932ade79cd0c439235e726dc30c8a00036820b7a96ee2f865 ];then
+	echo "=> Zorin OS Linux : Zorin OS 15.3 Lite 32-bit"
+fi
+
+if [ "$linux_sha" == 0192fccb564238113070ffb0e095559ad0c29b67951d070ed5fd6bd8412ef92b ];then
+	echo "=> Zorin OS Linux : Zorin OS 15.3 Education Lite 32-bit"
+fi
 
 
 
+# Ubuntu Mate
 
+if [ "$linux_sha" == cf90f3de070f2ed1cd6f60de16a197e6dad1b90c3898af165b0979561e449bbc ];then
+	echo "=> Ubuntu Mate Linux : ubuntu-mate-20.04.5-desktop-amd64.iso"
+fi
 
+if [ "$linux_sha" == 1c18cdabcf820f699cebf6cda7ed4ba230d9acaf0b1573b870b099f678d32c29 ];then
+	echo "=> Ubuntu Mate Linux : ubuntu-mate-20.04.5-desktop-amd64.iso"
+fi
 
+if [ "$linux_sha" == d52fe2e207b836568e620c2fea5c9beae081ae4c8bb56a6e143424d3f6aec463 ];then
+	echo "=> Ubuntu Mate Linux : ubuntu-mate-22.10-desktop-amd64.iso"
+fi
 
 
