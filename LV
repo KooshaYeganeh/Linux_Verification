@@ -377,7 +377,7 @@ fi
 
 
 
-if [ "$linux_sha" == 3705a428ddb02cdbe2280d900253dfe2f48053923d2b482b082dad25b7887bc0];then
+if [ "$linux_sha" == 3705a428ddb02cdbe2280d900253dfe2f48053923d2b482b082dad25b7887bc0 ];then
 	echo "=> Scientific Linux : SL-79-x86_64-2020-10-17-LiveCD.iso"
 fi
 
