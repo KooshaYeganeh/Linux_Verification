@@ -473,4 +473,9 @@ if [ "$linux_sha" == d52fe2e207b836568e620c2fea5c9beae081ae4c8bb56a6e143424d3f6a
 	echo "=> Ubuntu Mate Linux : ubuntu-mate-22.10-desktop-amd64.iso"
 fi
 
+# Neptune
+
+if [ "$linux_sha" == e8c4641a3958c705c0dc5701066330fa91ac229dbe3a3893f812f69a4da04b93 ];then
+	echo "=> Neptune Linux : Neptune 7.5 64-Bit ISO "
+fi
 
