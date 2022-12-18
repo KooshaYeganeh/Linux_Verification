@@ -24,6 +24,7 @@ For Example
 `cd Linux_Verification-main`
 
 `sudo mv LV /usr/bin/`
+`sudo mv LV_GUI /usr/bin/`
 
 
 ## Remove
