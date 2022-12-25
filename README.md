@@ -15,22 +15,35 @@ For Example
 
 ## Install
 
-`cd /tmp`
+```
+cd /tmp
+```
 
-`wget https://github.com/KooshaYeganeh/Linux_Verification/archive/refs/heads/main.zip`
+```
+wget https://github.com/KooshaYeganeh/Linux_Verification/archive/refs/heads/main.zip
+```
 
-`unzip main.zip`
+```
+unzip main.zip
+```
 
-`cd Linux_Verification-main`
+```
+cd Linux_Verification-main
+```
 
-`sudo mv LV /usr/bin/`
-`sudo mv LV_GUI /usr/bin/`
+```
+sudo mv LV /usr/bin/
+```
+```
+sudo mv LV_GUI /usr/bin/
+```
 
 
 ## Remove
 
-`sudo rm /usr/bin/LV`
-
+```
+sudo rm /usr/bin/LV
+```
 
 ## Donate
 **Help Me to Create Better and Bigger Database :)**
