@@ -1,14 +1,43 @@
 #!/usr/bin/bash
 
-: ' 
-Jadi, Thank You For Everything '
+#'Jadi, Thank You For Everything '
 
 linux_sha=$1
 
 
+
+
+## Fedora
+
+
+if [ "$linux_sha" == ffc8a655f801d5abe5b092fb34713373b15cf34f2b9b7397b889e210113dce81 ];then
+	echo "=> Fedora Linux : Fedora-i3-Live-x86_64-37-1.7.iso"
+fi
+
+if [ "$linux_sha" == 9c69005baafdba6e4ff04c1cf4779121b7fc9aacab80b4633394576da336a515 ];then
+	echo "=> Fedora Linux : Fedora-Workstation-Live-x86_64-37-1.7.iso"
+
+fi	
+
+
+
+## Lubuntu
+
+if [ "$linux_sha" == b9027a4633f1ff3dd60f857f5ca0d614ac588d2c7e56eaccbc251d0e08478106 ];then
+	echo "=> Lubuntu Linux : lubuntu-21.10-desktop-amd64.iso"
+fi
+
+
+
+
+## Kodachi
+
 if [ "$linux_sha" == 0924920d68c5bdb5edb28bde2730d3831db2da3f5b813a5ad903f10df32fc1cd ];then
 	echo "=> Kodachi Linux : kodachi-8.17-64.iso"
 fi
+
+
+## Alpine
 
 if [ "$linux_sha" == 730aceadaeab93d8bd18ace1575dcbdc5130b211c7e4b50aea7369e5f374a8a9 ];then
 	echo "=> Alpine Linux : alpine-xen-3.13.5-x86_64.iso"
